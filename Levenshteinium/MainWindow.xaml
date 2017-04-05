@@ -1,0 +1,17 @@
+﻿<Window x:Class="Levenshteinium.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Levenshteinium"
+        mc:Ignorable="d"
+        Title="Levenshteinium" Height="350" Width="525" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox x:Name="InputField" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,10,10,0" Visibility="Collapsed" TextChanged="InputField_TextChanged"/>
+        <TextBlock x:Name="HintText" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,45,0,0" Visibility="Collapsed"><Run Text="Similar words:"/></TextBlock>
+        <ListBox x:Name="ListSimilar" Margin="10,66,10,10" Visibility="Collapsed"/>
+        <ProgressBar x:Name="ProgressBar" HorizontalAlignment="Center" Height="15" Margin="0" VerticalAlignment="Center" Width="140" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="LabelLoading" Content="Loading dictionary..." HorizontalAlignment="Left" Margin="180,168,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
